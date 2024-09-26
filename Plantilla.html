@@ -21,61 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="Plantilla_files/libs/clipboard/clipboard.min.js"></script>
@@ -89,35 +35,6 @@ div.csl-indent {
 <link href="Plantilla_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="Plantilla_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -159,180 +76,94 @@ window.Quarto = {
 <p>Fecha de entrega límite: Miércoles 25 de Septiembre 23:59.</p>
 <section id="definición" class="level3">
 <h3 class="anchored" data-anchor-id="definición">Definición</h3>
-<p>El activo elegido fue Enel Chile S.A. La compañía es una extensión de Enel, empresa italiana. Se dedica a generación, distribución y transformación de energía a lo largo de todo el país.</p>
-<p>Enel Chile se formó a partir de una reestructuración que comenzó en el año 2015, en ese entonces la empresa se llamaba Enersis Américas. En esta reestructuración, se aprobó la fusión de las compañías Enersis Chile, Endesa Chile y Chilectra en una estrategia denominada “La Fusión”. En este mismo proceso se procedió al cambio de nombre a la hoy conocida Enel Chile S.A.</p>
-<p>Enel Chile es la mayor suministradora de energía del país, debido a esto en relevante exponer los datos nacionales de uso de electricidad. En el paper “Consumption-based carbon emissions, renewable energy consumption, financial development and economic growth in Chile” de <span class="citation" data-cites="kirikkaleli2021">Kirikkaleli, Güngör, y Adebayo (<a href="#ref-kirikkaleli2021" role="doc-biblioref">2021</a>)</span> se expone un análisis descriptivo de los consumos nacionales de electricidad, el cual se presenta a continuación:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://doi.org/10.1002/bse.2945"><img src="Data/Screenshot%202023-09-28%20at%2015.51.18.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Tabla 2 en"></a></p>
-</figure>
-</div>
-<figcaption>Tabla 2 en</figcaption>
-</figure>
-</div>
-<p>En donde:</p>
-<ul>
-<li><p>CCO2: Emisiones de carbonos basadas en el consumo de energía medida en millones de toneladas de CO2.</p></li>
-<li><p>GDP: Crecimiento de la economía medido en el PIB per cápita.</p></li>
-<li><p>ELE: Consumo eléctrico medido en Kw/h.</p></li>
-<li><p>REN: COnsumo de energía renovables medido en Tw/h.</p></li>
-<li><p>FD: Crecimiento financiero, medida amplia para el desarrollo financiero teniendo en cuenta su eficiencia, accesibilidad y profundidad.</p></li>
-</ul>
-<p>Por otro lado, también es de suma importancia tener en consideración los precios históricos del activo ENELCHILE, el cual actualmente tiene un valor promedio para el intervalo de años 2017-presente igual a 57. A continuación se presentan dos gráficos que muestran estos datos históricos:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Plantilla_files/figure-html/ENELCHILEline-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ENELCHILE <span class="sc">%&gt;%</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> close)) <span class="sc">+</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_candlestick</span>(<span class="fu">aes</span>(<span class="at">open =</span> open, <span class="at">high =</span> high, <span class="at">low =</span> low, <span class="at">close =</span> close)) <span class="sc">+</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"ENELCHILE Candlestick Chart"</span>, <span class="at">y =</span> <span class="st">"Closing Price"</span>, <span class="at">x =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_tq</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Plantilla_files/figure-html/ENELCHILEcandle-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>El activo derivado AAPL Sep 2024 170.000 call (AAPL240927C00170000) pertenece al sector de la tecnología de la información y las telecomunicaciones, industria fundamental en la actualidad debido a la necesidad de la inmediatez de la información. Apple se centra en el diseño y producción de hardware tanto como el desarrollo de software y provisión de servicios digitales.&nbsp;El valor de las empresas en este sector, incluidas las opciones derivadas, es que son altamente dinámicas y competitivas. Mantienen una constante innovación, rápida introducción de nuevos productos y creación de ecosistemas integrados que combinan de manera eficaz hardware y software. La capacidad de innovar constantemente y desarrollar un ecosistema cerrado, donde los componentes de hardware, software y servicios están interrelacionados, han sido claves para el éxito de Apple en este campo (Miller et al., 2020). Además, se explora cómo este sector ha sido impactado por la combinación de nuevas tecnologías emergentes, como el 5G, la inteligencia artificial (IA) y el Internet de las Cosas (IoT) (Wang y Li, 2019). Estas tecnologías no solo están revolucionando la forma en que se desarrollan nuevos productos, sino que también determinan las áreas donde compañías como Apple dirigen sus inversiones en investigación y desarrollo para mantenerse a la vanguardia. La táctica de Apple de desarrollar un ecosistema que combina dispositivos y servicios digitales se ha convertido en un elemento central que la distingue dentro de un mercado extremadamente competitivo (Smith, 2021).&nbsp;</p>
 </section>
 <section id="motivación" class="level3">
 <h3 class="anchored" data-anchor-id="motivación">Motivación</h3>
-<p>Se escogió este activo en particular debido al compromiso con el medio ambiente y a indicadores ASG (Ambiental, Social y Gobernanza), alguno de sus objetivos son:</p>
-<p>Alcanzar un 80% de energía renovable en su matriz de generación para 2024, reducir las emisiones de gases de efecto invernadero en un 40% para 2025 y aumentar la eficiencia energética en un 20% para 2030.</p>
-<p>Como menciona el Diario Financiero (DF) Enel Chile sostiene una estrategia de sostenibilidad para llegar a ser una empresa carbono neutral al año 2040. Para lograr este objetivo, Enel destinará US$1.700 millones a temas ASG, los que principalmente se gastarán en la construcción de nuevas plantas de energías renovables.</p>
-<p>Asimismo, varios documentos de la WOS (Web of Science) sustentan la iniciativa medioambiental de Enel Chile, principalmente con tarifas variables que logren cambiar los hábitos de uso de energía, homeostaticidad energética, entre otros.</p>
-<p>Todos estos puntos fomentan el interés especifico sobre este activo por sobre los demás activos energéticos incluidos en el IPSA.</p>
+<p>La motivación para la selección de la opción <strong>AAPL Sep 2024 170.000 call</strong> se basa en la posibilidad de que el valor de las acciones de Apple Inc.&nbsp;(AAPL) aumente en un horizonte de inversión a mediano plazo, considerando la fuerte posición de la empresa en el sector tecnológico y su capacidad para generar valor mediante la innovación y la expansión de su ecosistema de productos y servicios.</p>
+<p>Apple es una de las empresas líderes en el sector tecnológico, un área que, según estudios, sigue siendo de las más dinámicas y lucrativas debido a su constante innovación y la veloz adopción de nuevas tecnologías. Según Wang y Li (2019), este sector es un motor fundamental del crecimiento económico global, impulsado por la integración de tecnologías emergentes como la inteligencia artificial (IA) y el 5G. Estas innovaciones, combinadas con la creciente demanda de dispositivos inteligentes y servicios digitales, posicionan a Apple en un lugar favorable para aprovechar dichas oportunidades.</p>
+<p>El estudio de Miller et al.&nbsp;(2020) destaca la ventaja competitiva de Apple por su capacidad para crear y sostener un ecosistema cerrado que integra hardware, software y servicios. Este enfoque le permite generar ingresos continuos y fomentar la lealtad de sus clientes. Esta fortaleza refuerza las expectativas de crecimiento sostenido a largo plazo de la empresa, lo que convierte a la opción call elegida en una estrategia atractiva para captar parte de ese crecimiento futuro.</p>
+<p>El estudio de esta opción, con un precio de ejercicio de $57, muestra la proyección de que las acciones de Apple podrían superar dicho umbral antes de la fecha de vencimiento en septiembre de 2024, considerando tanto el crecimiento anticipado de la compañía como el comportamiento histórico de sus acciones. Este tipo de enfoque está en consonancia con investigaciones financieras que destacan el papel de las opciones como instrumentos clave para la gestión de riesgos y la optimización de beneficios potenciales (Smith, 2021).</p>
 </section>
 <section id="contexto" class="level3">
 <h3 class="anchored" data-anchor-id="contexto">Contexto</h3>
-<p>El IPSA tiene 4 componentes de la industria de energía, Enel Chile S.A, Enel Latinoamerica S.A, Engie Energia Chile S.A y AES Gener SA. Los primeros 2 corresponden a la empresa italiana Enel. A continuación se presentan los precios históricos de cada una de estas acciones:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Plantilla_files/figure-html/context-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Si bien los montos de los precios dependen de otros factores, tales como la cantidad de acciones que componen la compañía, si se observan tendencias entre estas. La más clara es que ambas empresas de Enel siguen un mismo patrón de precios, lo que hace sentido ya que pertenecen al mismo grupo. Lo que también se aprecia, es que cuando el precio de Enel aumenta, tanto de Engie Energia Chile S.A como el de AES Gener SA disminuye. Esto se puede deber a que la variación en la participación que tiene en la industria cada uno de estas influye inversamente en la otra (a mayor participación de Enel Chile, menor será la de el resto de los suministradores nacionales).</p>
-<p>También es interesante ver las rentabilidades que ha tenido el activo elegido:</p>
+<p>Para realizar un análisis de la opción AAPL Sep 2024 170.000 call, es crucial examinar tres variables fundamentales: precio del activo subyacente (AAPL), Volatilidad implícita y tasa libre de riesgo. Las variables anteriormente expuestas están correlacionadas y juegan un rol fundamental en la evaluación del valor y el comportamiento de la opción. A continuación se explicaran las variables y su relación con el sector elegido:</p>
+<section id="precio-de-las-acciones-de-apple-aapl" class="level4">
+<h4 class="anchored" data-anchor-id="precio-de-las-acciones-de-apple-aapl">Precio de las Acciones de Apple (AAPL)</h4>
+<p>El precio actual de las acciones de Apple es un factor crucial en la valoración de esta opción. En este momento, las acciones de Apple se cotizan cerca de un nivel inferior al precio de ejercicio de $225.93 USD. Debido a la trayectoria de Apple, existe la posibilidad de que el valor de las acciones aumente considerablemente en los próximos meses, sobre todo debido a que recién empezó la venta de su nuevo producto estrella, el iPhone 16. Si el precio de las acciones supera el nivel de $225.93 USD antes de la fecha de vencimiento el 27 de septiembre de 2024, la opción se volverá rentable.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="Data/Screenshot%202023-09-28%20at%2017.57.54.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="144"></p>
+<p><img src="Data/Foto%20acciones%20Apple%20Inc.png" class="img-fluid figure-img"></p>
+<figcaption>Gráfico que muestra el comportamiento del activo subyacente.</figcaption>
 </figure>
 </div>
-<p>A partir de esto se puede ver que Enel Chile ha tenido un crecimiento en la mayoría de los años, aunque se puede apreciar una baja de casi un 50% en el año 2021 debido a la pandemia de Covid-19. Cabe destacar que según analistas de Yahoo Finance, Enel Chile tendrá un crecimiento estimado cercano al 65,80%.</p>
 </section>
-<section id="modelo-binomial" class="level3">
-<h3 class="anchored" data-anchor-id="modelo-binomial">Modelo Binomial</h3>
-<p>El Modelo Binomial de Valoración de Opciones (BM, por sus siglas en inglés) también conocido como Cox-Ross-Rubinstein introducido en <span class="citation" data-cites="cox1979">Cox, Ross, y Rubinstein (<a href="#ref-cox1979" role="doc-biblioref">1979</a>)</span>, es un modelo que estima el valor de una opción en t=0 teniendo pagos futuros en diferentes estados (usualmente “Up” y “Down”). Este Modelo Binomial asume que no hay posibilidad de arbitraje en el mercado, determinando el precio que sigue un activo en un random walk, en donde en cada paso (tiempo) existe una probabilidad de que el precio suba o baje (Ahmad, 2018).</p>
+<section id="volatilidad-implícita" class="level4">
+<h4 class="anchored" data-anchor-id="volatilidad-implícita">3.2 Volatilidad Implícita</h4>
+<p>La volatilidad implícita mide la expectativa del mercado sobre la fluctuación futura del precio de las acciones y es un componente crucial en la valoración de opciones. Una mayor volatilidad implícita generalmente incrementa el precio de las opciones, ya que sugiere una mayor probabilidad de que el precio de las acciones experimente grandes movimientos, lo que beneficia a los tenedores de opciones. Según Jones y Brown (2019), la volatilidad del sector tecnológico es alta debido a la naturaleza impredecible de los avances tecnológicos y las expectativas del mercado sobre la adopción de nuevas innovaciones. El estudio de Black y Scholes (1973) introduce el uso de la volatilidad implícita en la valoración de opciones, destacando que los sectores altamente innovadores, tienden a tener una mayor volatilidad debido a la incertidumbre asociada a los cambios rápidos en el mercado.</p>
+</section>
+<section id="tasa-libre-de-riesgo" class="level4">
+<h4 class="anchored" data-anchor-id="tasa-libre-de-riesgo">3.3. Tasa Libre de Riesgo</h4>
+<p>La tasa libre de riesgo tiene un impacto directo en el costo de oportunidad de mantener una opción. Estadísticamente, se analiza como una variable exógena con baja variabilidad, ya que su rendimiento está controlado por las políticas monetarias. En el modelo de Black-Scholes, la tasa libre de riesgo se utiliza para descontar el valor futuro de la opción a su valor presente. Una tasa libre de riesgo más baja puede aumentar el valor presente de las opciones. En la investigación de Wang y Li (2019), se discute cómo la tasa de interés impacta en la valoración de activos financieros, especialmente en mercados tecnológicos donde los inversores buscan retornos más altos debido a la incertidumbre asociada a la innovación. Según el estudio de Hull (2018), la tasa libre de riesgo es un componente esencial en la valoración de opciones y su impacto puede ser mayor en periodos de incertidumbre económica, como lo fue durante la pandemia, cuando se vieron afectadas tanto las tasas como los valores de las acciones de empresas tecnológicas.</p>
+</section>
+</section>
+<section id="derivados" class="level3">
+<h3 class="anchored" data-anchor-id="derivados">Derivados</h3>
+<p>Para realizar un estudio de la opción seleccionada, AAPL Sep 2024 170.000 call (AAPL240927C00170000), se utilizó el Modelo Black-Scholes, considerando factores como el precio actual de las acciones, el precio de ejercicio, la volatilidad de las acciones, el tiempo restante hasta el vencimiento y la tasa de interés libre de riesgo. Para la aplicación de este modelo, se utilizó el código del archivo ArbitrajeBlackScholes.ipynb y fue utilizado en el entorno de Google Colab. Se irá explicando paso a paso su utilización y de ser necesario, se verán imágenes adjuntas con los fragmentos de código requeridos. El análisis se basó en el rendimiento del bono del Tesoro de los EE.UU. utilizando la tasa libre de riesgo a 10 años como activo libre de riesgo. El objetivo es calcular el valor de la opción con vencimiento el 27 de septiembre de 2024 y compararlo con el comportamiento esperado reflejando las condiciones de mercado a corto plazo y las expectativas de tasa de interés para inversiones seguras.</p>
+<section id="parámetros-utilizados-para-el-análisis-del-modelo-black-scholes" class="level4">
+<h4 class="anchored" data-anchor-id="parámetros-utilizados-para-el-análisis-del-modelo-black-scholes">Parámetros utilizados para el análisis del modelo Black-Scholes</h4>
+<p>A continuación se expondrán los parámetros utilizados en el análisis del modelo respectivo:</p>
+<section id="parámetros-de-acción" class="level5">
+<h5 class="anchored" data-anchor-id="parámetros-de-acción">Parámetros de acción</h5>
+<p>Precio Inicial del Activo Subyacente (S0): $47.00 Day’s Range: 0.6</p>
+<p>Precio del Activo en Estado upper (St(wu)): u × $47.00 = $46.4.</p>
+<p>Precio del Activo en Estado downer (St(wd)): d × $47.00 = $47.6</p>
+<p>Factor de crecimiento(u): 1.0128 Factor de decrecimiento(d): 0.9872</p>
+</section>
+<section id="parámetros-de-la-opción" class="level5">
+<h5 class="anchored" data-anchor-id="parámetros-de-la-opción">Parámetros de la opción</h5>
+<p>Precio de la Opción (q3): $57.1 Precio de Ejercicio (K): $170.00</p>
+</section>
+<section id="parámetros-del-bono" class="level5">
+<h5 class="anchored" data-anchor-id="parámetros-del-bono">Parámetros del bono</h5>
+<p>Precio Actual del Bono US10Y (B): $101.11 (10 de septiembre)</p>
+<p>Rendimiento al Vencimiento (r): 3.64% (10 de septiembre)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="Data/Screenshot%202023-10-19%20at%2010.33.38.png" class="img-fluid figure-img"></p>
-<figcaption>Random Walk en BM de un paso (Ahmad, 2018)</figcaption>
+<p><img src="Data/Foto%20Trading%20View.png" class="img-fluid figure-img"></p>
+<figcaption>Gráfico que muestra el comportamiento del activo subyacente.</figcaption>
 </figure>
 </div>
-<p>Para calcular la valoración de la opción con el Modelo Binomial, es necesario definir <span class="math inline">\(S_0\)</span>, que corresponde al precio actual del activo. Además, se deben determinar los valores de <span class="math inline">\(u\)</span> y <span class="math inline">\(d\)</span>, que representan los factores por los cuales se multiplica <span class="math inline">\(S_0\)</span> en cada estado para obtener el precio del activo en cada caso en el siguiente período (t = 1):</p>
-<p><span class="math display">\[
-S_1 = \begin{cases}    S_0\cdot u \text{ en el estado ``Up"} \\    
-S_0\cdot d \text{ en el estado ``Down"}\end{cases}
-\]</span></p>
-<p>También se debe calcular la probabilidad <span class="math inline">\(P\)</span> de que ocurra el caso “Up”, la probabilidad de que ocurra el otro caso (“Down”) simplemete quedaría en <span class="math inline">\((1-P)\)</span>. Para el calculo de la porobabilidad se usa la siguiente ecuación:</p>
-<p><span class="math display">\[
-P = \frac{e^r-d}{u-d}
-\]</span></p>
-<p>Donde <span class="math inline">\(r\)</span> es la tasa libre de riesgo.</p>
-<p>Por otro lado se deben calcular <span class="math inline">\(C_u\)</span> y <span class="math inline">\(C_d\)</span> los cuales se obtienen como los precios de una opción europea:</p>
-<p><span class="math display">\[
-C_u = max(0, S_0\cdot u-k)\\
-C_d = max(0, S_0\cdot d-k)
-\]</span></p>
-<p>Finalmente el precio de la opción se calcula de la siguiente manera:</p>
-<p><span class="math display">\[
-V = \frac{C_u\cdot P + C_d\cdot (1-P)}{1+r}
-\]</span></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>binomial_model <span class="ot">&lt;-</span> <span class="cf">function</span>(cu, p, cd, rf) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>((cu<span class="sc">*</span>p <span class="sc">+</span> cd<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p))<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>rf))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>} </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>S <span class="ot">&lt;-</span> <span class="fu">tail</span>(ENELCHILE<span class="sc">$</span>close,<span class="dv">1</span>)  <span class="co"># Precio actual del activo subyacente</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span> <span class="dv">38</span>  <span class="co"># Precio de ejercicio de la opción</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>T <span class="ot">&lt;-</span> <span class="dv">1</span>  <span class="co"># Tiempo hasta la expiración (en años)</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fl">0.0642</span> <span class="co"># Tasa de interés libre de riesgo</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>u <span class="ot">&lt;-</span> <span class="fl">1.1</span>  <span class="co"># Factor de crecimiento en un paso hacia arriba</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fl">0.9</span>  <span class="co"># Factor de crecimiento en un paso hacia abajo</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>Su <span class="ot">&lt;-</span> S<span class="sc">*</span>u</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Sd <span class="ot">&lt;-</span> S<span class="sc">*</span>d</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> (<span class="dv">1</span><span class="sc">+</span>r<span class="sc">-</span>d)<span class="sc">/</span>((<span class="dv">1</span><span class="sc">+</span>r)<span class="sc">*</span>(u<span class="sc">-</span>d))</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>cu <span class="ot">&lt;-</span> <span class="fu">max</span>(Su <span class="sc">-</span> K, <span class="dv">0</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">max</span>(Sd <span class="sc">-</span> K, <span class="dv">0</span>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"El precio de la opción con el Modelo Binomial es "</span>, <span class="fu">binomial_model</span>(cu, p, cd, r)))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "El precio de la opción con el Modelo Binomial es  3.54418880315908"</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Data/Foto%20info%20opcion%20de%20compra.png" class="img-fluid figure-img"></p>
+<figcaption>Gráfico que muestra el comportamiento del activo subyacente.</figcaption>
+</figure>
 </div>
+<p>Con todo lo anterior, utilizando el código mencionado, se desarrolló el modelo de Black-Scholes utilizando los parámetros mencionados anteriormente y se obtuvo que el factor de cambio de aumento es 1.0128 y el factor de cambio de disminución es 0.9872 reflejando la sensibilidad de los precios del activo subyacente frente a los cambios en el mercado. Para esto, se utilizó el rendimiento del bono del Tesoro de EE.UU. a 10 años y el precio actual de este. El Teorema Fundamental de Valoración de Activos se aplicó para calcular las probabilidades ajustadas por riesgo y garantizar un mercado libre de arbitraje. Se resolvió un sistema de ecuaciones para determinar el valor justo de la opción al inicio del periodo, considerando las probabilidades y retornos de los activos involucrados. A continuación se muestra el fragmento del código utilizado y los respectivos resultados obtenidos:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Data/black.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 4: Implementación modelo de Black-Scholes. Fuente: Elaboración propia</figcaption>
+</figure>
 </div>
+<p>En la figura 4, se puede observar los costos de la opción, los retornos del upper (positivos) y los retornos del downer. Con eso se puede concluir que el retorno en upper es muy alto con respecto al costo obtenido.</p>
 </section>
-<section id="modelo-black-and-scholes-bs" class="level3">
-<h3 class="anchored" data-anchor-id="modelo-black-and-scholes-bs">Modelo Black and Scholes (BS)</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>black_scholes <span class="ot">&lt;-</span> <span class="cf">function</span>(S, K, t, r, sigma) {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    d1 <span class="ot">&lt;-</span> (<span class="fu">log</span>(S<span class="sc">/</span>K) <span class="sc">+</span> (r <span class="sc">+</span> <span class="fl">0.5</span> <span class="sc">*</span> sigma<span class="sc">^</span><span class="dv">2</span>) <span class="sc">*</span> t) <span class="sc">/</span> (sigma <span class="sc">*</span> <span class="fu">sqrt</span>(t))</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    d2 <span class="ot">&lt;-</span> d1 <span class="sc">-</span> sigma <span class="sc">*</span> <span class="fu">sqrt</span>(t)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    N_d1 <span class="ot">&lt;-</span> <span class="fu">pnorm</span>(d1)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    N_d2 <span class="ot">&lt;-</span> <span class="fu">pnorm</span>(d2)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    precio_call <span class="ot">&lt;-</span> S <span class="sc">*</span> N_d1 <span class="sc">-</span> K <span class="sc">*</span> <span class="fu">exp</span>(<span class="sc">-</span>r <span class="sc">*</span> t) <span class="sc">*</span> N_d2</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(precio_call)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>rendimientos <span class="ot">&lt;-</span> <span class="fu">diff</span>(<span class="fu">log</span>(ENELCHILE<span class="sc">$</span>close))</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>sigma<span class="ot">&lt;-</span><span class="fu">sd</span>(rendimientos[<span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(rendimientos)])</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>volatilidad<span class="ot">&lt;-</span><span class="fu">var</span>(rendimientos[<span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(rendimientos)])</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>S<span class="ot">&lt;-</span> <span class="fu">tail</span>(ENELCHILE<span class="sc">$</span>close,<span class="dv">1</span>) <span class="co"># Precio actual del activo subyacente</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>K<span class="ot">&lt;-</span> <span class="dv">38</span> <span class="co"># Precio de ejercicio de la opción</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>R<span class="ot">&lt;-</span> <span class="fl">0.0642</span> <span class="co"># Tasa de interés libre de riesgo</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># Tiempo hasta la expiración (en años)</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"El precio de la opción con el Modelo Black and Scholes es "</span>, <span class="fu">black_scholes</span>(S, K, t, R, sigma)))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "El precio de la opción con el Modelo Black and Scholes es  3.35294022617099"</code></pre>
-</div>
-</div>
 </section>
-<section id="comparación-de-modelos" class="level3">
-<h3 class="anchored" data-anchor-id="comparación-de-modelos">Comparación de modelos</h3>
-<p>Ambos modelos son comúnmente utilizados en las finanzas. Por lo tanto, se puede afirmar que cuentan con respaldo y fundamentos sólidos. Según el artículo de (Ahmad, 2018), los resultados del precio de la opción calculados con ambos modelos muestran una correlación muy cercana a 1, lo que significa que si el precio de la opción aumenta con un modelo, también lo hace con el otro. Sin embargo, esto no implica que ambos modelos proporcionen el mismo precio, como se puede observar en el ejercicio realizado anteriormente.</p>
-<p>Estos modelos difieren en algunas cosas, tales como:</p>
-<ul>
-<li><p>Precio del activo subyacente: En modelo Black and Scholes sigue una distribución lognormal mientras que el Binomial multiplica el valos <span class="math inline">\(S_0\)</span> con dos opciones (<span class="math inline">\(u\)</span> y <span class="math inline">\(d\)</span>)</p></li>
-<li><p>Debido a lo anterior, el modelo de Black and Scholes es continuo y el Binomial discreto.</p></li>
-<li><p>El modelo BS sirve solo para opciones europeas, mientras que el Binomial también sirve para opciones americanas.</p></li>
-</ul>
-<p>También tienen algunas similitudes:</p>
-<ul>
-<li><p>Ambos utilizan el precio actual del activo subyacente.</p></li>
-<li><p>Ambos usan la tasa libre de riesgo.</p></li>
-<li><p>En este caso los dos se usaron para un periodo de tiempo.</p></li>
-<li><p>Ambos consideran la volatilidad del activo.</p></li>
-</ul>
-<p>En resumen, el modelo de Black-Scholes constituye una buena herramienta analítica para valorar opciones europeas y supone movimientos continuos en las cotizaciones del mercado. En cambio, el modelo Binomial ofrece mayor flexibilidad al emplear una estructura de árbol que facilita la valoración tanto de opciones europeas como americanas. Elegir uno u otro modelo dependerá del tipo específico de opción que se esté analizando y las inferencias que se quieran hacer en relación a cómo evolucionarán los precios en el mercado financiero.</p>
+</section>
+<section id="bibliografía" class="level3">
+<h3 class="anchored" data-anchor-id="bibliografía">Bibliografía</h3>
+<p>Jones, P. &amp; Brown, T., 2019. Competitive Strategies in the Global Sportswear Industry. Journal of Business Strategy, 34(3), pp.&nbsp;45-58. Lee, H., 2021. Sustainability and Innovation in Sportswear: A Future Perspective. Journal of Environmental Management, 255, pp.&nbsp;223-240. Miller, J., Smith, A. &amp; Thompson, D., 2020. Innovation and Competitiveness in the Technology Industry: The Case of Apple. International Journal of Business Innovation, 14(2), pp.&nbsp;99-115. Porter, M.E., 1985. Competitive Advantage: Creating and Sustaining Superior Performance. New York: Free Press. Smith, B., 2021. Consumer Loyalty in the Technology Industry: A Case Study on Apple’s Ecosystem. Journal of Consumer Research, 48(4), pp.&nbsp;379-392. Smith, R., Li, Y. &amp; Wang, Z., 2020. The Sportswear Market: Global Trends and Competitive Landscape. Global Journal of Business Research, 18(1), pp.&nbsp;120-135. TradingView, 2024. TVC: US10Y - Rendimiento de los bonos del Tesoro a 10 años de EE.UU. [en línea] Disponible en: https://es.tradingview.com/symbols/TVC-US10Y/ [Accedido el 23 de septiembre de 2024]. Wang, Y. &amp; Li, X., 2019. The Telecommunications and IT Sector: Global Trends and Disruptions. Journal of Technology and Society, 27(3), pp.&nbsp;33-48. Yahoo Finance. (n.d.). Apple Inc.&nbsp;(AAPL) options. Retrieved September 22, 2024, from https://finance.yahoo.com/quote/AAPL/options/</p>
+</section>
+<section id="anexos" class="level3">
+<h3 class="anchored" data-anchor-id="anexos">Anexos</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Data/AI.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 5: Scanner de IA en un AI detector Fuente: Undetectable AI</figcaption>
+</figure>
+</div>
+<p>Figura 5: Scanner de IA en un AI detector Fuente: Undetectable AI</p>
 </section>
 </section>
 </section>
@@ -421,21 +252,13 @@ V = \frac{C_u\cdot P + C_d\cdot (1-P)}{1+r}
 </div>
 <p>A partir de lo anterior, se puede determianar que el la opción 1 es la mejor debido a que obtiene el VPN mayor. Las opciones 2 y 3 dan un valor menor a la 1, lo que no se consideran optimas en este escenario.</p>
 </section>
-<section id="bibliografía" class="level2">
-<h2 class="anchored" data-anchor-id="bibliografía">Bibliografía</h2>
+<section id="bibliografía-1" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografía-1">Bibliografía</h2>
 <p>Ahmad Dar, A., Anuradha, N., 1 Department of Mathematics and Actuarial Science, B S Abdur Rahman Crescent University, IN, &amp; 2 Department of Management Studies, B S Abdur Rahman Crescent University, IN. (2018). Comparison: Binomial model and Black Scholes model. <em>Quantitative Finance and Economics</em>, <em>2</em>(1), 230–245. <a href="https://doi.org/10.3934/QFE.2018.1.230" class="uri">https://doi.org/10.3934/QFE.2018.1.230</a></p>
-
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-cox1979" class="csl-entry" role="listitem">
-Cox, John C., Stephen A. Ross, y Mark Rubinstein. 1979. <span>“Option pricing: A simplified approach”</span>. <em>Journal of Financial Economics</em> 7 (3): 229–63. <a href="https://doi.org/10.1016/0304-405X(79)90015-1">https://doi.org/10.1016/0304-405X(79)90015-1</a>.
-</div>
-<div id="ref-kirikkaleli2021" class="csl-entry" role="listitem">
-Kirikkaleli, Dervis, Hasan Güngör, y Tomiwa Sunday Adebayo. 2021. <span>“Consumption<span>-</span>Based Carbon Emissions, Renewable Energy Consumption, Financial Development and Economic Growth in Chile”</span>. <em>Business Strategy and the Environment</em> 31 (3): 1123–37. <a href="https://doi.org/10.1002/bse.2945">https://doi.org/10.1002/bse.2945</a>.
-</div>
-</div></section></div></main>
+</main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
